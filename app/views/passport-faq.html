@@ -1,85 +1,104 @@
 {% extends "layouts/main.html" %}
 
 {% block pageTitle %}
-  GOV.UK page template – {{ serviceName }} – GOV.UK Prototype Kit
+GOV.UK page template – {{ serviceName }} – GOV.UK Prototype Kit
 {% endblock %}
 
 {% block content %}
+<div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
+  <h1 class="govuk-heading-xl">Frequently Asked Questions</h1>
 
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-two-thirds">
-
-    <div>
-      <h1 class="govuk-heading-xl">
-        Frequently Asked Questions
-      </h1>
+  <!--  Question One-->
+  <div class="govuk-accordion__section">
+    <div class="govuk-accordion__section-header">
+      <h2 class="govuk-accordion__section-heading">
+        <span class="govuk-accordion__section-button">
+          1. About Us
+        </span>
+      </h2>
     </div>
-
-    <div id="faq_one">
-      <h6 class="govuk-heading-m">1. About us</h6>
-      <p>The General Register Office (GRO) is based in Southport, Merseyside
+    <div  class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+      <p class="govuk-body">The General Register Office (GRO) is based in Southport, Merseyside
         and holds records for all births, deaths, marriages and civil partnerships
         that have been registered in England and Wales from 1837.</p>
     </div>
+  </div>
 
-    <div id="faq_two">
-      <h6 class="govuk-heading-m">2. Records available</h6>
-      <p><strong>Ordering via our online service</strong>
+  <!--  Question Two-->
+  <div class="govuk-accordion__section">
+    <div class="govuk-accordion__section-header">
+      <h2 class="govuk-accordion__section-heading">
+        <span class="govuk-accordion__section-button">
+          2. Records Available
+        </span>
+      </h2>
+    </div>
+    <div  class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+      <p class="govuk-body"><strong>Ordering via our online service</strong>
         The following can be ordered through our GRO online ordering service -
       </p>
       <ul>
-        <li><p>Certificates for birth, death, marriage, civil partnership and adoption events
+        <li><p class="govuk-body">Certificates for birth, death, marriage, civil partnership and adoption events
           registered in England and Wales and for certain British Nationals, who were born,
           married, formed a civil partnership or died overseas.</p></li>
-        <li><p>Commemorative marriage certificates for silver, ruby, golden and diamond wedding
+        <li><p class="govuk-body">Commemorative marriage certificates for silver, ruby, golden and diamond wedding
           anniversaries.</p></li>
-        <li><p>PDFs for historic digitised civil registration records held by GRO (birth entries
+        <li><p class="govuk-body">PDFs for historic digitised civil registration records held by GRO (birth entries
           from 1837 to up to 100 years ago and death entries from 1837 to 1957).</p></li>
-        <li><p>Online View digital image for historic, digitised civil registration records held
+        <li><p class="govuk-body">Online View digital image for historic, digitised civil registration records held
           by GRO (birth entries from 1837 up to 100 years ago and death entries from 1837 - 1957).</p></li>
-        <li><p>To order a PDF or Online View digital image, you will need to provide a GRO index
+        <li><p class="govuk-body">To order a PDF or Online View digital image, you will need to provide a GRO index
           reference number. At the point of ordering, you will be taken to the GRO online indexes
           so that you can search for the reference number for the certificate that you are interested
           in. If you are unable to trace the record you can still apply for a certificate however
           there will be an additional administration charge if a GRO index reference is not provided.</p></li>
       </ul>
-      <p>The GRO online indexes should be used to try and identify the index reference for: Birth
+      <p class="govuk-body">The GRO online indexes should be used to try and identify the index reference for: Birth
         records from 1837 to 1934, and 1984 up to two years ago. Death records from 1837 to 1957,
         and 1984 up to two years ago in England and Wales. Alternative index sources include
         https://www.freebmd.org.uk/ and the host sites.</p>
-      <p><strong>You will be prompted to supply further details for more recent births and deaths
+      <p class="govuk-body"><strong>You will be prompted to supply further details for more recent births and deaths
         (within the last 50 years) and marriages and civil partnerships (within the last 35 years)
         when you complete the online application form.</strong></p>
-      <p>If you are unable to complete the mandatory fields, you will not be able to apply online
+      <p class="govuk-body">If you are unable to complete the mandatory fields, you will not be able to apply online
         and you will need to follow our telephone ordering process which incurs an additional fee
         of £4.00 Please contact us on +44(0) 300 123 1837 for further information.</p>
-      <p><strong>Ordering offline (by telephone or post) only</strong></p>
-      <p>The following certificates are not available to order online and are not subject to the
+      <p class="govuk-body"><strong>Ordering offline (by telephone or post) only</strong></p>
+      <p class="govuk-body">The following certificates are not available to order online and are not subject to the
         telephone or postal certificate application fee.</p>
       <ul>
         <li><p>Short or abridged versions of certificates (apart from short adoption certificates,
           which can be ordered online)</p></li>
-        <li><p>A certificate from the Register of Presumed Deaths</p></li>
-        <li><p>A certificate from the Abandoned Children's Register</p></li>
-        <li><p>A certificate from the Parental Order Register and</p></li>
-        <li><p>A certificate from the Gender Recognition Marriage or Civil Partnership Registers</p></li>
+        <li><p class="govuk-body">A certificate from the Register of Presumed Deaths</p></li>
+        <li><p class="govuk-body">A certificate from the Abandoned Children's Register</p></li>
+        <li><p class="govuk-body">A certificate from the Parental Order Register and</p></li>
+        <li><p class="govuk-body">A certificate from the Gender Recognition Marriage or Civil Partnership Registers</p></li>
       </ul>
+      <p class="govuk-body">If you require a copy of a short birth certificate, or if you require a certificate from the
+        Abandoned Children's Register or the Parental Order Register please contact us on +44(0) 300
+        123 1837 for further information. For certificates from the Gender Recognition Register, once
+        the registration has been made, you will have been given a direct line to telephone the team
+        or you can use the above number and be redirected.</p>
+      <p class="govuk-body"><strong>Records we are not able to provide</strong></p>
+      <p class="govuk-body">GRO is not able to issue certificates for birth or death registrations that have taken place
+        within the last six months and you may wish to obtain a certificate from the register office or
+        church where the event was registered.</p>
+      <p class="govuk-body">This information excludes adoption certificates, as the local register office does not hold
+        a copy of the Adopted Children Register. If you require further information, please contact us
+        on +44(0) 300 123 1837 and talk to our Customer Service Team.</p>
     </div>
-    <p>If you require a copy of a short birth certificate, or if you require a certificate from the
-      Abandoned Children's Register or the Parental Order Register please contact us on +44(0) 300
-      123 1837 for further information. For certificates from the Gender Recognition Register, once
-      the registration has been made, you will have been given a direct line to telephone the team
-      or you can use the above number and be redirected.</p>
-    <p><strong>Records we are not able to provide</strong></p>
-    <p>GRO is not able to issue certificates for birth or death registrations that have taken place
-      within the last six months and you may wish to obtain a certificate from the register office or
-      church where the event was registered.</p>
-    <p>This information excludes adoption certificates, as the local register office does not hold
-      a copy of the Adopted Children Register. If you require further information, please contact us
-      on +44(0) 300 123 1837 and talk to our Customer Service Team.</p>
+  </div>
 
-    <div id="faq_three">
-      <h6 class="govuk-heading-m">3. Price list for our services</h6>
+  <!--  Question Three-->
+  <div class="govuk-accordion__section">
+    <div class="govuk-accordion__section-header">
+      <h2 class="govuk-accordion__section-heading">
+        <span class="govuk-accordion__section-button">
+          3. Price List for Our Services
+        </span>
+      </h2>
+    </div>
+    <div  class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
       <p><strong>Priority Service</strong></p>
       <p>Your certificate(s) will be despatched on the <strong>next working day</strong> from receipt of your
         application, if we receive it before 4pm. We will send your certificate(s) to you using
@@ -101,7 +120,7 @@
         </tr>
         <tr class="govuk-table__row">
           <td class="govuk-table__cell">Full certificate with a GRO index reference supplied
-            (if customer requires the GRO to index on their behalf a fee of £3.00 is charged)</td>
+            <br>(if customer requires the GRO to index on their behalf a fee of £3.00 is charged)</td>
           <td class="govuk-table__cell">£38.00</td>
           <td class="govuk-table__cell">£42.00</td>
         </tr>
@@ -115,15 +134,15 @@
       <p><strong>Standard Service</strong></p>
       <p>Your certificate(s) will be despatched on the <strong>fourth working day</strong> from receipt of
         your application (if a GRO index reference has been supplied), or the <strong>fifteenth working
-        day</strong> (if a GRO index reference has not been supplied). We will send your certificate(s) to you
+          day</strong> (if a GRO index reference has not been supplied). We will send your certificate(s) to you
         using <strong>2nd class postage.</strong></p>
 
       <p>PDF(s) will be available to view in your online account within <strong>four working days</strong>
         from the date of the order if we receive it before 4pm. You will be notified by email when the PDF
         is available.</p>
 
-        <p>Online View digital images will be available to view in your online account <strong>once the
-          order has been completed.</strong></p>
+      <p>Online View digital images will be available to view in your online account <strong>once the
+        order has been completed.</strong></p>
       <table class="govuk-table">
         <thead class="govuk-table__head">
         <tr class="govuk-table__row">
@@ -172,17 +191,35 @@
         </tbody>
       </table>
     </div>
+  </div>
 
-    <div id="faq_four">
-      <h6 class="govuk-heading-m">4. Our refund policy</h6>
+  <!--  Question Four-->
+  <div class="govuk-accordion__section">
+    <div class="govuk-accordion__section-header">
+      <h2 class="govuk-accordion__section-heading">
+        <span class="govuk-accordion__section-button">
+          4. Our Refund Policy
+        </span>
+      </h2>
+    </div>
+    <div  class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
       <p>Please note that we will <strong>retain a fee of £3.50</strong> (for certificate orders) to cover
         administration costs incurred if we are unable to find a record of the event you have requested.
         Any additional administration fees which you may have paid (if not applying using our online service
         or including a GRO index reference) are also non-refundable.</p>
     </div>
+  </div>
 
-    <div id="faq_five">
-      <h6 class="govuk-heading-m">5. What to do if you have not received your certificate</h6>
+  <!--  Question Five-->
+  <div class="govuk-accordion__section">
+    <div class="govuk-accordion__section-header">
+      <h2 class="govuk-accordion__section-heading">
+        <span class="govuk-accordion__section-button">
+          5. What to do if you have not received your certificate?
+        </span>
+      </h2>
+    </div>
+    <div  class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
       <p>Please allow at least <strong>5 working days</strong> (working days exclude Saturday/Sunday/Bank Holidays)
         from the estimated date of despatch for delivery before you contact us or a
         minimum of <strong>15 working days</strong> if you live overseas. We will not be able to
@@ -195,9 +232,18 @@
       <p><strong>Please note that you should report the non-receipt of a certificate within three months of
         the date the order was placed.</strong></p>
     </div>
+  </div>
 
-    <div id="faq_six">
-      <h6 class="govuk-heading-m">6. What to do if you have not received your attached PDF?</h6>
+  <!--  Question Six-->
+  <div class="govuk-accordion__section">
+    <div class="govuk-accordion__section-header">
+      <h2 class="govuk-accordion__section-heading">
+        <span class="govuk-accordion__section-button">
+          6. What to do if you have not received your attached PDF?
+        </span>
+      </h2>
+    </div>
+    <div  class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
       <p>Please allow <strong>5 working days</strong> from the estimated date of order before you contact us.
         We will not be able to take action if you contact us before these timescales. If you still haven't
         received your PDF after this time, please use our
@@ -205,15 +251,33 @@
         us a message. When you submit this form, it will generate an email to us with the details you have
         supplied. We will respond to your email within <strong>5 working days.</strong></p>
     </div>
+  </div>
 
-    <div id="faq_seven">
-      <h6 class="govuk-heading-m">7. What to do if you have not received your Online View digital image?</h6>
-      <p>Please contact us via our
-        <a href="https://eforms.homeoffice.gov.uk/outreach/Certificate_Service.ofml">online form</a></p>
+  <!--  Question Seven-->
+  <div class="govuk-accordion__section">
+    <div class="govuk-accordion__section-header">
+      <h2 class="govuk-accordion__section-heading">
+        <span class="govuk-accordion__section-button">
+          7. What to do if you have not received your Online View digital image?
+        </span>
+      </h2>
     </div>
+    <div  class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+      <p>Please contact us via our
+        <a href="https://eforms.homeoffice.gov.uk/outreach/Certificate_Service.ofml">online form.</a></p>
+    </div>
+  </div>
 
-    <div id="faq_eight">
-      <h6 class="govuk-heading-m">8. Using our online service</h6>
+  <!--  Question Eight-->
+  <div class="govuk-accordion__section">
+    <div class="govuk-accordion__section-header">
+      <h2 class="govuk-accordion__section-heading">
+        <span class="govuk-accordion__section-button">
+          8. Using Our Online Services
+        </span>
+      </h2>
+    </div>
+    <div  class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
       <p>The quickest, easiest and cheapest way to order a certificate is to go online using the GRO's secure online
         ordering service. The following document provides information on how to set up an account so that you will
         be able to start ordering from us online.</p>
@@ -249,9 +313,18 @@
           ordering Troubleshooting</a><p>PDF, 175KB, 2 pages</p></td>
       </tr></table>
     </div>
+  </div>
 
-    <div id="faq_nine">
-      <h6 class="govuk-heading-m">9. Understanding the GRO index reference number</h6>
+  <!--  Question Nine-->
+  <div class="govuk-accordion__section">
+    <div class="govuk-accordion__section-header">
+      <h2 class="govuk-accordion__section-heading">
+        <span class="govuk-accordion__section-button">
+          9. Understanding the GRO Index Reference Number
+        </span>
+      </h2>
+    </div>
+    <div  class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
       <p>The following document provides information on the GRO index reference number and where you can find it.
         This will help you when making an application and if you wish to carry out your family history research.</p>
 
@@ -269,9 +342,18 @@
           Index Reference Number</a><p>PDF, 197KB, 3 pages</p></td>
       </tr></table>
     </div>
+  </div>
 
-    <div id="faq_ten">
-      <h6 class="govuk-heading-m">10. The GRO online indexes</h6>
+  <!--  Question Ten-->
+  <div class="govuk-accordion__section">
+    <div class="govuk-accordion__section-header">
+      <h2 class="govuk-accordion__section-heading">
+        <span class="govuk-accordion__section-button">
+          10. The GRO online Indexes
+        </span>
+      </h2>
+    </div>
+    <div  class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
       <p>
         A number of GRO birth and death indexes are freely available to search online. These cover birth records
         from 1837 to 1934, and 1984 up to two years ago. Death records from 1837 to 1957, and 1984 up to two years
@@ -296,9 +378,18 @@
           <p>PDF, 164KB, 4 pages</p></td>
       </tr></table>
     </div>
+  </div>
 
-    <div id="faq_eleven">
-      <h6 class="govuk-heading-m">11. Certificate types</h6>
+  <!--  Question Eleven-->
+  <div class="govuk-accordion__section">
+    <div class="govuk-accordion__section-header">
+      <h2 class="govuk-accordion__section-heading">
+        <span class="govuk-accordion__section-button">
+          11. Certificate Types
+        </span>
+      </h2>
+    </div>
+    <div  class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
       <p>The following documents provide guidance on what you will see on a certificate, what records are available
         and how to order them.</p>
 
@@ -316,7 +407,7 @@
                                   Certificates">Birth, Marriage, Civil Partnership and Death Certificates</a><p>PDF,
           113KB, 1 page</p></td>
       </tr></table>
-      
+
 
       <table><tr>
         <td ><a href="https://www.gro.gov.uk/gro/content/certificates/images/CG6_1.pdf"
@@ -331,7 +422,7 @@
                                   class="link" target="_blank" title="Overseas Records">Overseas
           Records</a><p>PDF, 167KB, 3 pages</p></td>
       </tr></table>
-      
+
 
       <table><tr>
         <td ><a href="https://www.gro.gov.uk/gro/content/certificates/images/CG6_2.pdf"
@@ -347,9 +438,18 @@
           Certificates</a><p>PDF, 175KB, 2 pages</p></td>
       </tr></table>
     </div>
+  </div>
 
-    <div id="faq_twelve">
-      <h6 class="govuk-heading-m">12. Other services we provide</h6>
+  <!--  Question Twelve-->
+  <div class="govuk-accordion__section">
+    <div class="govuk-accordion__section-header">
+      <h2 class="govuk-accordion__section-heading">
+        <span class="govuk-accordion__section-button">
+          12. Other Services We Provide
+        </span>
+      </h2>
+    </div>
+    <div  class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
       <p><strong>PDF</strong></p>
       <p>Portable Document Format (PDF) is a file format used to present and exchange documents reliably and in a
         manner that is independent of user's software, hardware, or operating system. PDF's are available for
@@ -410,10 +510,19 @@
           Commemorative Marriage Certificate</a><p>PDF, 97KB, 1 page</p></td>
       </tr></table>
     </div>
+  </div>
 
-    <div id="faq_thirteen">
-      <h6 class="govuk-heading-m">13. What to do if you are not happy with the PDF/Online View digital
-        image/Certificate you have received or the service we have provided</h6>
+  <!--  Question Thirteen-->
+  <div class="govuk-accordion__section">
+    <div class="govuk-accordion__section-header">
+      <h2 class="govuk-accordion__section-heading">
+        <span class="govuk-accordion__section-button">
+          13. What to do if you are not happy with the PDF/Online View digital
+        image/Certificate you have received or the service we have provided?
+        </span>
+      </h2>
+    </div>
+    <div  class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
       <p>Use our <a href="https://eforms.homeoffice.gov.uk/outreach/Certificate_Service.ofml">online form</a> to
         send us a message. When you submit this form it will generate an email to us with the details you have
         supplied. We will respond to your email within 5 working days.
@@ -421,8 +530,9 @@
           date the order was placed.</strong>
       </p>
     </div>
-
   </div>
+
 </div>
+
 
 {% endblock %}
